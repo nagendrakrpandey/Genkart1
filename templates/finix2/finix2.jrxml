@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="XMLCertificate" pageWidth="828" pageHeight="585" orientation="Landscape" columnWidth="802" leftMargin="10" rightMargin="0" topMargin="17" bottomMargin="0" uuid="34140afb-5710-4cbb-b6cb-a35e73a5059a">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="imgParam8" class="java.lang.String"/>
+	<parameter name="imgParam2" class="java.lang.String"/>
+	<parameter name="imgParam3" class="java.lang.String"/>
+	<parameter name="imgParam4" class="java.lang.String"/>
+	<parameter name="imgParam5" class="java.lang.String"/>
+	<parameter name="imgParam6" class="java.lang.String"/>
+	<parameter name="imgParam1" class="java.lang.String"/>
+	<parameter name="imgParam10" class="java.lang.String"/>
+	<parameter name="imgParamBG" class="java.lang.String"/>
+	<queryString language="XPath">
+		<![CDATA[/candidates/candidate]]>
+	</queryString>
+	<field name="aadhaarNumber" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="aadhaarNumber"/>
+		<fieldDescription><![CDATA[aadhaarNumber]]></fieldDescription>
+	</field>
+	<field name="candidateName" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="candidateName"/>
+		<fieldDescription><![CDATA[candidateName]]></fieldDescription>
+	</field>
+	<field name="jobRole" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="jobRole"/>
+		<fieldDescription><![CDATA[jobRole]]></fieldDescription>
+	</field>
+	<field name="dateOfIssuance" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="dateOfIssuance"/>
+		<fieldDescription><![CDATA[dateOfIssuance]]></fieldDescription>
+	</field>
+	<field name="dateOfStart" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="dateOfStart"/>
+		<fieldDescription><![CDATA[dateOfStart]]></fieldDescription>
+	</field>
+	<field name="fatherORHusbandName" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="fatherORHusbandName"/>
+		<fieldDescription><![CDATA[fatherORHusbandName]]></fieldDescription>
+	</field>
+	<field name="guardianType" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="guardianType"/>
+		<fieldDescription><![CDATA[guardianType]]></fieldDescription>
+	</field>
+	<field name="level" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="level"/>
+		<fieldDescription><![CDATA[level]]></fieldDescription>
+	</field>
+	<field name="salutation" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="salutation"/>
+		<fieldDescription><![CDATA[salutation]]></fieldDescription>
+	</field>
+	<field name="sector" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="sector"/>
+		<fieldDescription><![CDATA[sector]]></fieldDescription>
+	</field>
+	<field name="grade" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="grade"/>
+		<fieldDescription><![CDATA[grade]]></fieldDescription>
+	</field>
+	<field name="sectorSkillCouncil" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="sectorSkillCouncil"/>
+		<fieldDescription><![CDATA[sectorSkillCouncil]]></fieldDescription>
+	</field>
+	<field name="sid" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="sid"/>
+		<fieldDescription><![CDATA[sid]]></fieldDescription>
+	</field>
+	<field name="marks2" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="marks2"/>
+		<fieldDescription><![CDATA[marks2]]></fieldDescription>
+	</field>
+	<field name="marks3" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="marks3"/>
+		<fieldDescription><![CDATA[marks3]]></fieldDescription>
+	</field>
+	<background>
+		<band height="565" splitType="Stretch">
+			<image>
+				<reportElement x="5" y="-6" width="830" height="564" uuid="97b8d002-81c5-4577-b50f-bde36526c617">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{imgParamBG}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement mode="Transparent" x="564" y="430" width="96" height="87" uuid="249ed375-df0c-44ed-80e9-d9c2682b7e05">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{imgParam5}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement mode="Transparent" x="576" y="27" width="97" height="95" uuid="249ed375-df0c-44ed-80e9-d9c2682b7e05">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{imgParam4}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement mode="Transparent" x="107" y="35" width="173" height="135" uuid="249ed375-df0c-44ed-80e9-d9c2682b7e05">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{imgParam8}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement mode="Transparent" x="165" y="414" width="97" height="95" uuid="249ed375-df0c-44ed-80e9-d9c2682b7e05">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{imgParam2}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="64" y="127" width="656" height="180" forecolor="#126389" uuid="7cf76ade-fbac-48ca-b12e-6ae44fb2a9cd"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Polonaise Bold" size="120" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Certificate]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="107" y="465" width="212" height="3" uuid="e489836c-e356-4762-876b-b9831ce9fc46">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida-Calligraphy" size="1" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{candidateName}+""+$F{candidateName}+""+$F{candidateName}+""+$F{candidateName}+""+$F{candidateName}+""+$F{candidateName}+""+$F{candidateName}+""+$F{candidateName}+""+$F{candidateName}+""+$F{candidateName}+""+$F{candidateName}+""+$F{candidateName}+""+$F{candidateName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="114" y="468" width="195" height="14" uuid="d10c19c3-3b61-4859-aba0-8bd9dcb8a33b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Himanshu Vyapak]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="483" width="199" height="14" uuid="b3e9a029-3446-40ff-b3e0-ae92d2f7f531">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Times New Roman" size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Director]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="106" y="498" width="209" height="12" uuid="dd89c853-7c0b-4acf-a4ea-1be703421bbc">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Times New Roman" size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[FinX Institute Ltd.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="502" y="465" width="212" height="3" uuid="e489836c-e356-4762-876b-b9831ce9fc46">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida-Calligraphy" size="1" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{candidateName}+""+$F{candidateName}+""+$F{candidateName}+""+$F{candidateName}+""+$F{candidateName}+""+$F{candidateName}+""+$F{candidateName}+""+$F{candidateName}+""+$F{candidateName}+""+$F{candidateName}+""+$F{candidateName}+""+$F{candidateName}+""+$F{candidateName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="297" y="532" width="215" height="25" uuid="d9be9467-a342-4246-9a4f-f9e3d994923c"/>
+				<textElement textAlignment="Center" markup="html">
+					<font fontName="Times New Roman" size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="502" y="468" width="212" height="14" uuid="32d6fdf2-58fa-4011-af54-8bfa75604f09">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" markup="html">
+					<font fontName="Times New Roman" size="10" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{grade}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="515" y="483" width="182" height="14" uuid="29ba3b0a-e7ce-4999-9af7-80ec00be6cc5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" markup="html">
+					<font fontName="Times New Roman" size="10" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sectorSkillCouncil}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="516" y="497" width="180" height="14" uuid="b7148371-0274-4797-bea4-eed340e0870a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" markup="html">
+					<font fontName="Times New Roman" size="10" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{level}]]></textFieldExpression>
+			</textField>
+		</band>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="520" splitType="Stretch">
+			<textField>
+				<reportElement x="61" y="244" width="203" height="30" uuid="e489836c-e356-4762-876b-b9831ce9fc46">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman" size="20" isBold="false" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["This is to certify that"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="243" y="249" width="507" height="30" uuid="e489836c-e356-4762-876b-b9831ce9fc46">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="20" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{candidateName}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="230" y="274" width="524" height="1" uuid="186e226a-8e8d-40d5-8441-728ce133b2a4">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="1.19"/>
+				</graphicElement>
+			</line>
+			<componentElement>
+				<reportElement x="358" y="430" width="97" height="80" uuid="d1ace716-df15-4c7c-a183-e4aad4fa4bc0"/>
+				<jr:QRCode xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<jr:codeExpression><![CDATA["CERTIFICATE OF COMPLETION\nName: "+$F{candidateName}+"\nEnrollment no: "+$F{aadhaarNumber}+" \nCertificate no: "+$F{sid}+"\nJob Name: "+$F{jobRole}+"\nPassing Year: "+$F{sector}+"\n\nCreated & Maintained By: FinX Institute Limited"]]></jr:codeExpression>
+				</jr:QRCode>
+			</componentElement>
+			<textField>
+				<reportElement x="61" y="283" width="160" height="30" uuid="5aee62c1-e8b7-4418-9855-2c42f8187d87">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" markup="html">
+					<font fontName="Times New Roman" size="20" isBold="false" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Registration No."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="507" y="283" width="280" height="30" uuid="5aee62c1-e8b7-4418-9855-2c42f8187d87">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" markup="html">
+					<font fontName="Times New Roman" size="20" isBold="false" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["has successfully completed the"]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="200" y="304" width="301" height="1" uuid="186e226a-8e8d-40d5-8441-728ce133b2a4">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="1.19"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="629" y="319" width="143" height="26" uuid="8840ff0d-2ee0-4bbf-b6e2-7fbc0f36a1da">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" markup="html">
+					<font fontName="Times New Roman" size="20" isBold="false" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["examination on"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="67" y="353" width="163" height="30" uuid="8840ff0d-2ee0-4bbf-b6e2-7fbc0f36a1da">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" markup="html">
+					<font fontName="Times New Roman" size="20" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sector}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="65" y="380" width="165" height="1" uuid="186e226a-8e8d-40d5-8441-728ce133b2a4">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="1.19"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="233" y="353" width="579" height="30" uuid="dd5e85d9-07d9-48ac-80c4-4772f2ca0c7f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" markup="html">
+					<font fontName="Times New Roman" size="20" isBold="false" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["conducted by <b>  FinX Institute Ltd. (formerly BSE Institute Ltd.)</b>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="101" y="281" width="476" height="30" uuid="269e888c-33f7-4542-942d-5f0f038fd2eb">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="20" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{aadhaarNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="66" y="317" width="554" height="30" uuid="a59f409d-ba1a-4dc8-82a4-2872e1c81584">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="20" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jobRole}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="66" y="344" width="554" height="1" uuid="c3c39935-88d3-4d10-8d80-170e7b0f0b1f">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="1.19"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
